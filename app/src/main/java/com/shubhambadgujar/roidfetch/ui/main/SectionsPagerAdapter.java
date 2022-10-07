@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.shubhambadgujar.roidfetch.AboutFragment;
 import com.shubhambadgujar.roidfetch.General;
 import com.shubhambadgujar.roidfetch.MemoryFragment;
 import com.shubhambadgujar.roidfetch.R;
@@ -36,6 +37,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                return General.newInstance("none" ,"none");
             case 1:
                 return MemoryFragment.newInstance("none" ,"none");
+            case 2:
+                return AboutFragment.newInstance("none" ,"none");
             default:
                 return PlaceholderFragment.newInstance(position + 1);
 
